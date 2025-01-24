@@ -20,9 +20,9 @@ class HotelRepositoryImpl implements HotelRepository {
     const url = 'https://run.mocky.io/v3/079004b0-a5be-41bd-a586-e25e1eedcb1f';
     final response = await dio.get(url);
 
-    final json = jsonDecode(response.data) as Map<String, dynamic>;
+    final json = response.data;
     final hotelApiModel = HotelApiModel.fromJson(json);
-    
+
     final hotel = hotelApiModel.toCoreModel();
     return hotel;
   }

@@ -12,6 +12,7 @@ dependencies:
   dio: ^5.7.0
   json_annotation: ^4.9.0
   flutter_bloc: ^9.0.0
+  cached_network_image: ^3.4.1
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +23,27 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/
+
+  fonts:
+    # - family: SFProDisplay300
+    #   fonts:
+    #     - asset: assets/fonts/SFPRODISPLAYREGULAR.otf
+
+    # - family: SFProDisplay400
+    #   fonts:
+    #     - asset: assets/fonts/SFPRODISPLAYMEDIUM.otf
+
+    # - family: SFProDisplay500
+    #   fonts:
+    #     - asset: assets/fonts/SFPRODISPLAYSEMIBOLD.otf
+
+    - family: SFProDisplay600
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYBOLD.otf
+    # - family: SFProDisplay700
+    #   fonts:
+    #     - asset: assets/fonts/SFPRODISPLAYHEAVY.otf
