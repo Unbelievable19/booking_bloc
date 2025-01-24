@@ -1,3 +1,4 @@
+import 'package:booking_bloc/extensions.dart';
 import 'package:flutter/material.dart';
 
 class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -8,9 +9,11 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      scrolledUnderElevation: 0,
+      backgroundColor: context.color.blockBackgroundColor,
       title: Text(
         titleAppBar,
-        style: const TextStyle(fontFamily: 'SFProDisplay600'),
+        // style: const TextStyle(fontFamily: ''),
       ),
       centerTitle: true,
     );

@@ -1,7 +1,7 @@
 class Hotel {
   int id;
   String name;
-  String adress;
+  String address;
   int minimalPrice;
   String priceForIt;
   int rating;
@@ -12,7 +12,7 @@ class Hotel {
   Hotel(
       {required this.id,
       required this.name,
-      required this.adress,
+      required this.address,
       required this.minimalPrice,
       required this.priceForIt,
       required this.rating,
@@ -27,4 +27,3 @@ class AboutTheHotel {
 
   AboutTheHotel({required this.description, required this.peculiarities});
 }
-

@@ -35,7 +35,7 @@ class HotelApiModel {
     return Hotel(
       id: id,
       name: name,
-      adress: adress,
+      address: adress,
       minimalPrice: minimal_price,
       priceForIt: price_for_it,
       rating: rating,
@@ -59,6 +59,8 @@ class AboutTheHotelApiModel {
 
   AboutTheHotel toCoreModel() {
     return AboutTheHotel(
-        description: description, peculiarities: peculiarities,);
+      description: description,
+      peculiarities: peculiarities,
+    );
   }
 }

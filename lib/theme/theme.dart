@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static final ThemeData mainTheme = ThemeData(
-    fontFamily: 'SFProDisplay600',
+    fontFamily: 'TimesNewRoman',
     primaryColor: Colors.white,
     scaffoldBackgroundColor: const Color(0xFFF6F6F9),
     dividerTheme: const DividerThemeData(color: Color(0xFFE9EAEC)),
@@ -17,7 +17,7 @@ class AppTheme {
     textColor: Colors.black,
     secondaryTextColor: Color(0xFF828796),
     blockBackgroundColor: Colors.white,
-    itemBackgroundColor: Color(0xFFFBFBFC),
+    itemBackgroundColor: Color(0xE8F1F1F1),
     textFieldHintColor: Color(0xFFA9ABB7),
     textFieldValueColor: Color(0xFF14142B),
     formErrorColor: Color(0x26EB5757),
