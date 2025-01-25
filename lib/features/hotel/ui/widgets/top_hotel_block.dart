@@ -2,7 +2,6 @@ import 'package:booking_bloc/core/shared_widgets/carousel.dart';
 import 'package:booking_bloc/core/utils/price_formatter.dart';
 import 'package:booking_bloc/extensions.dart';
 import 'package:booking_bloc/features/hotel/domain/hotel.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class TopHotelBlock extends StatelessWidget {
@@ -70,24 +69,6 @@ class TopHotelBlock extends StatelessWidget {
             ))
       ],
     );
-  }
-}
-
-@Deprecated('Use ImageCarousel instead')
-class Gallery extends StatelessWidget {
-  const Gallery({super.key});
-
-  static const url =
-      "https://www.atorus.ru/sites/default/files/upload/image/News/56149/Club_Priv%C3%A9_by_Belek_Club_House.jpg";
-  @override
-  Widget build(BuildContext context) {
-    return ClipRRect(
-        borderRadius: BorderRadius.circular(15),
-        child: CachedNetworkImage(
-          fit: BoxFit.cover,
-          height: context.adaptiveWidth * 0.66,
-          imageUrl: url,
-        ));
   }
 }
 

@@ -18,7 +18,7 @@ class BottomButtonSheet extends StatelessWidget {
         color: context.theme.primaryColor,
         width: context.adaptiveWidth,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 14, 16, 9),
+          padding: const EdgeInsets.fromLTRB(16, 14, 16, 27),
           child: SizedBox(
             height: 60,
             child: CupertinoButton(

@@ -1,3 +1,4 @@
+import 'package:booking_bloc/core/routing/router.dart';
 import 'package:booking_bloc/features/hotel/data/hotel_repository.dart';
 import 'package:booking_bloc/features/hotel/ui/hotel_bloc.dart';
 import 'package:booking_bloc/features/hotel/ui/hotel_screen.dart';
@@ -18,6 +19,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: AppTheme.mainTheme,
+        onGenerateRoute: (settings) => RouteGenerator.generateRoute(settings),
         home: BlocProvider(
           create: (context) =>
               HotelBloc(HotelRepositoryImpl(Dio()))..add(FetchHotelEvent()),

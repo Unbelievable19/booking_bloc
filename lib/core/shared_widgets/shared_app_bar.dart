@@ -8,9 +8,9 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      // pinned: true,
-      // floating: false,
+    return SliverAppBar(
+      pinned: false,
+      floating: false,
       scrolledUnderElevation: 0,
       backgroundColor: context.color.blockBackgroundColor,
       title: Text(

@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static final ThemeData mainTheme = ThemeData(
-    fontFamily: 'TimesNewRoman',
-    primaryColor: Colors.white,
-    scaffoldBackgroundColor: const Color(0xFFF6F6F9),
-    dividerTheme: const DividerThemeData(color: Color(0xFFE9EAEC)),
-  );
+      fontFamily: 'TimesNewRoman',
+      primaryColor: Colors.white,
+      scaffoldBackgroundColor: const Color(0xFFF6F6F9),
+      dividerTheme: const DividerThemeData(color: Color(0xFFE9EAEC)),
+      progressIndicatorTheme:
+          ProgressIndicatorThemeData(color: appColors.addressColor));
 
   static const appColors = CustomColors(
     addressColor: Color(0xFF0D72FF),
