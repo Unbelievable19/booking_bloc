@@ -1,3 +1,4 @@
+import 'package:booking_bloc/core/shared_widgets/carousel.dart';
 import 'package:booking_bloc/core/utils/price_formatter.dart';
 import 'package:booking_bloc/extensions.dart';
 import 'package:booking_bloc/features/hotel/domain/hotel.dart';
@@ -22,7 +23,7 @@ class TopHotelBlock extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Gallery(),
+            ImageCarousel(imageUrls: hotel.imageUrls),
             const SizedBox(height: 16),
             Rating(rating: hotel.rating, ratingName: hotel.ratingName),
             const SizedBox(height: 9),
@@ -72,6 +73,7 @@ class TopHotelBlock extends StatelessWidget {
   }
 }
 
+@Deprecated('Use ImageCarousel instead')
 class Gallery extends StatelessWidget {
   const Gallery({super.key});
 

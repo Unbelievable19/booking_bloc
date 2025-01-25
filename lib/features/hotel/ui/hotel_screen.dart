@@ -42,7 +42,8 @@ class HotelScreen extends StatelessWidget {
                       buttonText: 'К выбору номера',
                       onPressed: () {},
                     ),
-                  )
+                  ),
+                  SizedBox(height: 20)
                 ],
               );
             default:
