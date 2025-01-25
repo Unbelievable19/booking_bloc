@@ -17,7 +17,7 @@ class HotelRepositoryImpl implements HotelRepository {
 
   @override
   Future<Hotel> getHotel() async {
-    const url = 'https://run.mocky.io/v3/079004b0-a5be-41bd-a586-e25e1eedcb1f';
+    const url = 'https://run.mocky.io/v3/e4045619-1aa7-4a45-a5aa-2bf958f9d4d0';
     final response = await dio.get(url);
 
     final json = response.data;
