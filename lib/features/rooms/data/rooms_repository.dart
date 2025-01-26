@@ -13,7 +13,7 @@ class RoomsRepositoryImpl implements RoomsRepository {
 
   @override
   Future<List<Room>> getRooms() async {
-    const url = 'https://run.mocky.io/v3/f8a503f2-e4a9-437e-96fb-417871ba6ad7';
+    const url = 'https://run.mocky.io/v3/593cd346-44a2-4440-bab7-c4c2e90d92f4';
     final response = await dio.get(url);
 
     final json = response.data;

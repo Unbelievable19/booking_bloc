@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String titleAppBar;
 
-  SharedAppBar({super.key, required this.titleAppBar});
+  const SharedAppBar({super.key, required this.titleAppBar});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +18,15 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
         style: const TextStyle(fontWeight: FontWeight.w600),
       ),
       centerTitle: true,
+      automaticallyImplyLeading: false,
+      leading: Navigator.of(context).canPop()
+          ? IconButton(
+              icon: const Icon(Icons.arrow_back_ios_new_rounded),
+              color: Colors.black,
+              iconSize: 24,
+              onPressed: () => Navigator.of(context).pop(),
+            )
+          : const SizedBox.shrink(),
     );
   }
 
