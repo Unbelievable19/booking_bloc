@@ -1,7 +1,5 @@
 // https://run.mocky.io/v3/079004b0-a5be-41bd-a586-e25e1eedcb1f
 
-import 'dart:convert';
-
 import 'package:booking_bloc/features/hotel/data/hotel_api_model.dart';
 import 'package:booking_bloc/features/hotel/domain/hotel.dart';
 import 'package:dio/dio.dart';

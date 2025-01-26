@@ -3,6 +3,7 @@ import 'package:booking_bloc/core/shared_widgets/carousel.dart';
 import 'package:booking_bloc/core/shared_widgets/shared_app_bar.dart';
 import 'package:booking_bloc/core/utils/price_formatter.dart';
 import 'package:booking_bloc/extensions.dart';
+import 'package:booking_bloc/features/booking/ui/booking_screen.dart';
 import 'package:booking_bloc/features/hotel/ui/widgets/bottom_hotel_block.dart';
 import 'package:booking_bloc/features/rooms/domain/room.dart';
 import 'package:booking_bloc/features/rooms/ui/rooms_bloc.dart';
@@ -116,7 +117,9 @@ class RoomTile extends StatelessWidget {
                     child: CupertinoButton(
                         borderRadius: BorderRadius.circular(15),
                         color: context.color.addressColor,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, BookingScreen.id);
+                        },
                         child: const Text(
                           "Выбрать номер",
                           style: TextStyle(fontSize: 16),
